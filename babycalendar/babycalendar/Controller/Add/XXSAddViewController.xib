@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XXSAddViewController">
+            <connections>
+                <outlet property="babyImage" destination="oAB-R3-Tot" id="O1D-Co-ljD"/>
+                <outlet property="babyNote" destination="6pU-Sk-kMB" id="fHK-mM-DtU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="记录宝宝现在的情况吧.." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6pU-Sk-kMB">
+                    <rect key="frame" x="20" y="84" width="560" height="180"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" spellCheckingType="no"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oAB-R3-Tot">
+                    <rect key="frame" x="20" y="288" width="560" height="157"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="en7-y6-IaQ">
+                    <rect key="frame" x="210" y="505" width="180" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="BK4-Ir-rsQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="保存"/>
+                    <connections>
+                        <action selector="saveDataButtonClicked:" destination="-1" eventType="touchUpInside" id="kcK-Ve-BTD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6pU-Sk-kMB" secondAttribute="trailing" constant="20" id="7iQ-Ii-AzX"/>
+                <constraint firstItem="oAB-R3-Tot" firstAttribute="top" secondItem="6pU-Sk-kMB" secondAttribute="bottom" constant="24" id="90d-e5-r91"/>
+                <constraint firstItem="oAB-R3-Tot" firstAttribute="trailing" secondItem="6pU-Sk-kMB" secondAttribute="trailing" id="Apc-ld-2gu"/>
+                <constraint firstItem="6pU-Sk-kMB" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="I5q-GN-cNg"/>
+                <constraint firstAttribute="bottom" secondItem="en7-y6-IaQ" secondAttribute="bottom" constant="61" id="Iet-1R-iHF"/>
+                <constraint firstItem="en7-y6-IaQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PQM-L8-6lb"/>
+                <constraint firstItem="en7-y6-IaQ" firstAttribute="top" secondItem="oAB-R3-Tot" secondAttribute="bottom" constant="60" id="R2k-cW-Ic4"/>
+                <constraint firstItem="oAB-R3-Tot" firstAttribute="leading" secondItem="6pU-Sk-kMB" secondAttribute="leading" id="TPR-ci-v5m"/>
+                <constraint firstItem="6pU-Sk-kMB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="dLg-h3-rTn"/>
+                <constraint firstItem="en7-y6-IaQ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.3" id="f1M-rT-nC6"/>
+                <constraint firstItem="6pU-Sk-kMB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="vIb-n6-m5z"/>
+            </constraints>
+            <point key="canvasLocation" x="198" y="363"/>
+        </view>
+    </objects>
+</document>

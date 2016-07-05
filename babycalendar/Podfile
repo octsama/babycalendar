@@ -1,0 +1,5 @@
+pod 'AFNetworking', '~> 3.0.4'
+pod 'FMDB', '~> 2.6'
+pod 'SVProgressHUD', '~> 2.0.3'
+pod 'Masonry', '~> 1.0.0'
+pod 'WeiboSDK', '~> 3.1.3'

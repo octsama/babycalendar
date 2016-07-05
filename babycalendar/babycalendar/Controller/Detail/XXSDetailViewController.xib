@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XXSDetailViewController">
+            <connections>
+                <outlet property="babyImage" destination="MRP-or-N01" id="dI0-mO-vOm"/>
+                <outlet property="babyNote" destination="GGD-hG-hBw" id="zpa-yi-UEX"/>
+                <outlet property="userNameAndTime" destination="OIf-kT-XyT" id="G3A-tE-VWn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGD-hG-hBw">
+                    <rect key="frame" x="13" y="473" width="574" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIf-kT-XyT">
+                    <rect key="frame" x="13" y="504" width="574" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MRP-or-N01">
+                    <rect key="frame" x="13" y="88" width="574" height="365"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OIf-kT-XyT" firstAttribute="leading" secondItem="GGD-hG-hBw" secondAttribute="leading" id="0uO-4w-NAx"/>
+                <constraint firstItem="GGD-hG-hBw" firstAttribute="trailing" secondItem="MRP-or-N01" secondAttribute="trailing" id="E76-UX-Klm"/>
+                <constraint firstAttribute="bottom" secondItem="OIf-kT-XyT" secondAttribute="bottom" constant="75" id="PEa-MX-JEH"/>
+                <constraint firstItem="GGD-hG-hBw" firstAttribute="leading" secondItem="MRP-or-N01" secondAttribute="leading" id="SYu-aH-Y3b"/>
+                <constraint firstItem="GGD-hG-hBw" firstAttribute="top" secondItem="MRP-or-N01" secondAttribute="bottom" constant="20" id="VQt-1s-isp"/>
+                <constraint firstItem="OIf-kT-XyT" firstAttribute="trailing" secondItem="GGD-hG-hBw" secondAttribute="trailing" id="Ylr-UI-KEh"/>
+                <constraint firstItem="MRP-or-N01" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="80" id="hap-xk-cb5"/>
+                <constraint firstItem="MRP-or-N01" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="5" id="j2j-gc-IxD"/>
+                <constraint firstItem="OIf-kT-XyT" firstAttribute="top" secondItem="GGD-hG-hBw" secondAttribute="bottom" constant="10" id="kPx-EV-BXp"/>
+                <constraint firstAttribute="trailingMargin" secondItem="MRP-or-N01" secondAttribute="trailing" constant="5" id="qTv-KL-Ia1"/>
+            </constraints>
+            <point key="canvasLocation" x="204" y="301"/>
+        </view>
+    </objects>
+</document>

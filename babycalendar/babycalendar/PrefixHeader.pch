@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  babycalendar
+//
+//  Created by 君の神様 on 16/5/3.
+//  Copyright © 2016年 Rex. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define DEFAULTS(type, key) ([[NSUserDefaults standardUserDefaults] type##ForKey:key])
+#define kAppKey @"401484246"
+#define kRedirectURL @"http://www.acfun.tv/"
+#define SET_DEFAULTS(Type, key, val) do {                               \
+[[NSUserDefaults standardUserDefaults] set##Type:val forKey:key];   \
+[[NSUserDefaults standardUserDefaults] synchronize];                \
+} while (0)
+#define RM_DEFAULTS(key) do {                                           \
+[[NSUserDefaults standardUserDefaults] removeObjectForKey:key];     \
+[[NSUserDefaults standardUserDefaults] synchronize];                \
+} while (0)
+
+
+#endif /* PrefixHeader_pch */
